@@ -1,0 +1,50 @@
+@import "../../../global.scss";
+
+.text {
+  color: $plainFontColor;
+
+  position: relative;
+  top: 30%;
+  text-align: left;
+  transform: translate(5%, 0%);
+
+  .header {
+    padding: 20px 0px;
+
+    font-size: 80px;
+    font-weight: 700;
+  }
+
+  .description {
+    padding: 0px 15px;
+    border-left: 4px solid $mainColor;
+    height: 100%;
+
+    inline-size: 70%;
+    overflow: wrap;
+    font-size: 25px;
+    font-weight: 500;
+
+    span {
+      color: $mainColor;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .text {
+    top: 5%;
+    text-align: center;
+    transform: translate(0%, 0%);
+
+    .description {
+      inline-size: 100%;
+      padding: 0px 0px;
+      border-left: 0px solid $mainColor;
+
+      inline-size: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+}
