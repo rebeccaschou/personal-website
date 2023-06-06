@@ -1,26 +1,17 @@
 import React from "react";
-import "./Project1.scss";
+import styles from "./Project1.module.scss";
+
+import Project1Image from "./Project1Image/Project1Image";
+import Project1Text from "./Project1Text/Project1Text";
 
 export default function Project1() {
   return (
-    <div className="project1" id="project1">
-      <div className="project1-left">
-        <img
-          className="project1-img"
-          src="assets/sample-project-image.png"
-          alt="project 1"
-        ></img>
+    <div className={styles.project} id="project1">
+      <div className={styles.left}>
+        <Project1Image />
       </div>
-      <div className="project1-right">
-        <div className="project1-text">
-          <h1>Personal Website</h1>
-          <p className="project1-tags"> UI/UX | React | Django</p>
-          <p className="project1-description">
-            Designing a personal website (that you're looking at right now!) to
-            show personal projects, publications, and for-fun crafts!
-          </p>
-          <button>Learn More</button>
-        </div>
+      <div className={styles.right}>
+        <Project1Text />
       </div>
     </div>
   );

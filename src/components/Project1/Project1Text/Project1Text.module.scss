@@ -1,0 +1,43 @@
+@import "../../../global.scss";
+
+.text {
+  position: relative;
+  top: 30%;
+  text-align: left;
+
+  .header {
+    padding: 5px 0px;
+
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .tags {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .description {
+    font-size: 20px;
+    padding: 10px 0px;
+    inline-size: 85%;
+    overflow: wrap;
+    font-weight: 350;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 970px) {
+  .text {
+    text-align: center;
+    top: 5%;
+
+    .description {
+      inline-size: auto;
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    // maybe change font size here under p and h1
+  }
+}

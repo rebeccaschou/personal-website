@@ -1,0 +1,22 @@
+@import "../../../global.scss";
+
+button {
+  border: none;
+  background-color: $backgroundColor;
+
+  padding: 6px 15px;
+  border-radius: 20px;
+
+  color: $plainFontColor;
+  font-family: inherit;
+  font-size: 15px;
+  text-decoration: none;
+
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: $backgroundColor;
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

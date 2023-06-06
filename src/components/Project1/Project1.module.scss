@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.project {
+  background-color: white;
+  color: $backgroundColor;
+  display: flex;
+
+  .left {
+    flex: 0.6;
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  .right {
+    flex: 0.4;
+  }
+}
+
+@media (max-width: 970px) {
+  .project {
+    flex-direction: column;
+
+    .right {
+      position: relative;
+    }
+  }
+}
