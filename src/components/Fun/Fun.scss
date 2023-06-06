@@ -1,5 +1,7 @@
+@import "../../global.scss";
+
 .fun {
-  background-color: lightcyan;
+  background-color: $backgroundColor;
 
   // .main {
   //   flex: 0.5;
