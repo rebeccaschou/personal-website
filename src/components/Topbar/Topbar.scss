@@ -1,0 +1,55 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 90px;
+  background-color: $backgroundColor;
+  color: $mainColor;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  .wrapper {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      .logo {
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .right {
+      .navitems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          list-style: none;
+          padding: 0 10px;
+          position: relative;
+
+          a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $plainFontColor;
+            transition: 0.2s ease-in-out;
+            display: inline-block;
+          }
+
+          a:hover {
+            color: $mainColor;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}
