@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={`${styles.navbar} ${menuOpen && styles.active}`}>
       <div className={styles.wrapper}>

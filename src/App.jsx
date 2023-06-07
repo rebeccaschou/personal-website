@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
+import Menu from "./components/Navbar/Menu/Menu";
 import About from "./components/About/About";
 import Project1 from "./components/Project1/Project1";
 import Fun from "./components/Fun/Fun";
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <About />
         <Project1 />
