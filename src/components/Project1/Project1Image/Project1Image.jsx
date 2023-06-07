@@ -5,7 +5,7 @@ export default function Project1Image() {
   return (
     <img
       className={styles.image}
-      src="assets/sample-project-image.png"
+      src="assets/personal-website-photo.png"
       alt="project 1"
     ></img>
   );

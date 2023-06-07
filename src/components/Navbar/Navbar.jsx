@@ -1,17 +1,17 @@
 import React from "react";
-import "./Navbar.scss";
+import styles from "./Navbar.module.scss";
 
-export default function Topbar() {
+export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className="topbar">
-      <div className="wrapper">
-        <div className="left">
-          <a href="#about" className="logo">
+    <div className={`${styles.navbar} ${menuOpen && styles.active}`}>
+      <div className={styles.wrapper}>
+        <div className={styles.left}>
+          <a href="#about" className={styles.logo}>
             rebecca.
           </a>
         </div>
-        <div className="right">
-          <ul className="navitems">
+        <div className={styles.right}>
+          <ul className={styles.navitems}>
             <li>
               <a href="#about">About</a>
             </li>
@@ -21,10 +21,15 @@ export default function Topbar() {
             <li>
               <a href="#fun">For Fun</a>
             </li>
-            {/* <li>
-              <a href="#contact">Contact</a>
-            </li> */}
           </ul>
+          <div
+            className={styles.hamburger}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
         </div>
       </div>
     </div>
