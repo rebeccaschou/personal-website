@@ -1,7 +1,7 @@
 import React from "react";
-import "./Project1Button.module.scss";
+import "./ProjectButton.module.scss";
 // import styles from "./Project1Button.module.scss";
 
-export default function Project1Button() {
+export default function ProjectButton() {
   return <button>Learn More</button>;
 }
