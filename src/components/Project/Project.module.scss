@@ -20,7 +20,12 @@
   .project {
     flex-direction: column;
 
+    .left {
+      flex: 0.5;
+    }
+
     .right {
+      flex: 0.5;
       position: relative;
     }
   }

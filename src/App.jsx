@@ -15,7 +15,7 @@ function App() {
       tags: ["UI/UX", "React", "Django"],
       description:
         "Designing a personal website (that you're looking at right now!) to show personal projects, publications, and for-fun crafts!",
-      image: "assets/personal-website-photo.png",
+      image: "assets/personal-website-image.png",
       alt: "project 1",
     },
     {
@@ -24,7 +24,7 @@ function App() {
       tags: ["Swift", "XCode", "CoreData"],
       description:
         "Designed and published mobile app to provide neonatologists with growth projections and warnings about abnormal growth for newborns, based on the Fenton 2013 growth chart.",
-      image: "assets/personal-website-photo.png",
+      image: "assets/peditools-image.png",
       alt: "project 2",
     },
   ];
