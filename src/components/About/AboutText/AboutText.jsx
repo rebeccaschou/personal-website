@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./AboutText.module.scss";
 
+import { Link } from "react-router-dom";
+
 // import AboutMediaLinks from "../AboutMediaLinks/AboutMediaLinks";
 
 export default function AboutText() {
@@ -11,6 +13,9 @@ export default function AboutText() {
         I'm <span>Rebecca Chou</span>, a sophomore studying computer science at
         Brown University!
       </p>
+      <button className={styles[`projects-button`]}>
+        <Link to="/projects">Go to Projects</Link>
+      </button>
       {/* <AboutMediaLinks /> */}
     </div>
   );
