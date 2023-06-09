@@ -1,25 +1,27 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 
+import { Link } from "react-router-dom";
+
 export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={`${styles.navbar} ${menuOpen && styles.active}`}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <a href="#about" className={styles.logo}>
+          <a href="/about" className={styles.logo}>
             rebecca.
           </a>
         </div>
         <div className={styles.right}>
           <ul className={styles.navitems}>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#project1">Projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#fun">For Fun</a>
+              <Link to="/forfun">For Fun</Link>
             </li>
           </ul>
           <div
