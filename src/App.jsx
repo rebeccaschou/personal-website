@@ -3,67 +3,12 @@ import Menu from "./components/Navbar/Menu/Menu";
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
 import Fun from "./components/Fun/Fun";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 import "./App.scss";
 
 import React from "react";
 import { useState } from "react";
-import {
-  Route,
-  Routes,
-  // createBrowserRouter,
-  // RouterProvider,
-  BrowserRouter,
-} from "react-router-dom";
-
-// const projects = [
-//   {
-//     id: "project1",
-//     title: "Personal Website",
-//     tags: ["UI/UX", "React", "Django"],
-//     description:
-//       "Designing a personal website (that you're looking at right now!) to show personal projects, publications, and for-fun crafts!",
-//     image: "assets/personal-website-image.png",
-//     alt: "project 1",
-//   },
-//   {
-//     id: "project2",
-//     title: "PediTools: Fenton 2013",
-//     tags: ["Swift", "XCode", "CoreData"],
-//     description:
-//       "Designed and published mobile app to provide neonatologists with growth projections and warnings about abnormal growth for newborns, based on the Fenton 2013 growth chart.",
-//     image: "assets/peditools-image.png",
-//     alt: "project 2",
-//   },
-// ];
-
-// const router = createBrowserRouter([
-//   { path: "/", element: <About /> },
-//   { path: "/about", element: <About /> },
-//   {
-//     path: "/projects",
-//     element: (
-// <React.Fragment>
-//   <Project
-//     id={projects[0].id}
-//     title={projects[0].title}
-//     tags={projects[0].tags}
-//     description={projects[0].description}
-//     image={projects[0].image}
-//     alt={projects[0].alt}
-//   />
-//   <Project
-//     id={projects[1].id}
-//     title={projects[1].title}
-//     tags={projects[1].tags}
-//     description={projects[1].description}
-//     image={projects[1].image}
-//     alt={projects[1].alt}
-//   />
-// </React.Fragment>
-//     ),
-//   },
-//   { path: "/forfun", element: <Fun /> },
-// ]);
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -120,6 +65,18 @@ function App() {
               }
             ></Route>
             <Route path="/forfun" element={<Fun />}></Route>
+            <Route
+              path={"/project-details-" + projects[0].id}
+              element={
+                <ProjectDetails id={projects[0].id} title={projects[0].title} />
+              }
+            ></Route>
+            <Route
+              path={"/project-details-" + projects[1].id}
+              element={
+                <ProjectDetails id={projects[1].id} title={projects[1].title} />
+              }
+            ></Route>
           </Routes>
           {/* <RouterProvider router={router} /> */}
         </div>

@@ -1,7 +1,13 @@
 import React from "react";
 import "./ProjectButton.module.scss";
-// import styles from "./Project1Button.module.scss";
+import styles from "./ProjectButton.module.scss";
 
-export default function ProjectButton() {
-  return <button>Learn More</button>;
+import { Link } from "react-router-dom";
+
+export default function ProjectButton(props) {
+  return (
+    <button class={styles[`learn-more-button`]}>
+      <Link to={"/project-details-" + props.id}>Learn More</Link>
+    </button>
+  );
 }

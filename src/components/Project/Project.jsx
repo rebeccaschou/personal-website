@@ -12,6 +12,7 @@ export default function Project(props) {
       </div>
       <div className={styles.right}>
         <ProjectText
+          id={props.id}
           title={props.title}
           tags={props.tags}
           description={props.description}
