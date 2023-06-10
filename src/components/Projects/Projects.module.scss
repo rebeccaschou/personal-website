@@ -1,0 +1,23 @@
+@import "../../global.scss";
+
+// changes from .sections formattiong:
+// change background-color from $backgroundColor to $plainFontColor
+// remove top: 90px (added strange scroll-padding to the top)
+.projects {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-color: $plainFontColor;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > * {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    scroll-snap-align: start;
+  }
+}

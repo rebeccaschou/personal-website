@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Menu from "./components/Navbar/Menu/Menu";
 import About from "./components/About/About";
-import Project from "./components/Project/Project";
+import Projects from "./components/Projects/Projects";
 import Fun from "./components/Fun/Fun";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 import "./App.scss";
@@ -40,29 +40,11 @@ function App() {
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div className="sections">
           <Routes>
+            <Route path="/" element={<About />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route
               path="/projects"
-              element={
-                <React.Fragment>
-                  <Project
-                    id={projects[0].id}
-                    title={projects[0].title}
-                    tags={projects[0].tags}
-                    description={projects[0].description}
-                    image={projects[0].image}
-                    alt={projects[0].alt}
-                  />
-                  <Project
-                    id={projects[1].id}
-                    title={projects[1].title}
-                    tags={projects[1].tags}
-                    description={projects[1].description}
-                    image={projects[1].image}
-                    alt={projects[1].alt}
-                  />
-                </React.Fragment>
-              }
+              element={<Projects projects={projects} />}
             ></Route>
             <Route path="/forfun" element={<Fun />}></Route>
             <Route
@@ -78,7 +60,6 @@ function App() {
               }
             ></Route>
           </Routes>
-          {/* <RouterProvider router={router} /> */}
         </div>
       </div>
     </BrowserRouter>
