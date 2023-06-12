@@ -1,9 +1,76 @@
 @import "../../global.scss";
 
 .project-details {
+  background-color: $backgroundColor;
   margin-top: 0px;
   top: 0px;
   position: absolute;
-  z-index: 4;
-  background-color: white;
+
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+
+    max-width: 70%;
+    max-height: 90%;
+    border-radius: 30px;
+
+    .tags {
+      margin-top: 40px;
+      display: flex;
+    }
+
+    .title {
+      color: $mainColor;
+      margin-top: 15px;
+    }
+
+    .description {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .bullets {
+      display: flex;
+      margin-top: 20px;
+
+      .left {
+        flex-direction: column;
+
+        .bullet-text {
+          padding-top: 5px;
+          padding-bottom: 12px;
+        }
+      }
+
+      .right {
+        margin-left: 60px;
+
+        .tool-list {
+          padding-top: 5px;
+          list-style-type: circle;
+          margin-left: 0px;
+          padding-left: 15px;
+
+          li {
+            padding-bottom: 3px;
+            display: list-item;
+            overflow-x: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title-minor {
+  color: $mainColor;
+  font-size: 18px;
 }
