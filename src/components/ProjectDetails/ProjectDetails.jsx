@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ProjectDetails.module.scss";
 
 import ProjectTag from "./ProjectTag/ProjectTag";
+import BackButton from "./BackButton/BackButton";
 
 export default function ProjectDetails(props) {
   return (
@@ -9,6 +10,7 @@ export default function ProjectDetails(props) {
       className={styles[`project-details`]}
       id={`project-details- ${props.id}`}
     >
+      <BackButton />
       <div className={styles.card}>
         <div className={styles.tags}>
           {props.tags.map((tag) => (
