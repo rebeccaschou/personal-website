@@ -1,0 +1,101 @@
+@import "../../../global.scss";
+
+.about-details {
+  background-color: white;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    max-width: 50%;
+    max-height: 90%;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 700;
+      text-align: center;
+      color: $mainColor;
+    }
+
+    .top-details {
+      display: flex;
+      flex-direction: row;
+      padding-top: 30px;
+
+      .left {
+        flex: 0.6;
+        justify-content: center;
+
+        .about-details-image {
+          width: 60%;
+          border-radius: 50%;
+          border: 5px solid white;
+          transform: translate(20%, 0%);
+        }
+      }
+
+      .summary {
+        flex: 0.4;
+        padding-top: 10px;
+
+        .header {
+          color: $mainColor;
+          font-size: 20px;
+          padding-top: 20px;
+        }
+
+        .subtext {
+          padding-top: 5px;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+    .description {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      color: $backgroundColor;
+      line-height: 1.4;
+    }
+
+    .resume-button {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+
+      border: none;
+      background-color: $mainColor;
+
+      padding: 10px 15px;
+      border-radius: 20px;
+      width: 200px;
+
+      color: $plainFontColor;
+      font-family: inherit;
+      font-size: 15px;
+      text-decoration: none;
+
+      transition: 0.2s ease-in-out;
+
+      a {
+        text-decoration: none;
+        color: $plainFontColor;
+      }
+    }
+
+    .resume-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  }
+}
