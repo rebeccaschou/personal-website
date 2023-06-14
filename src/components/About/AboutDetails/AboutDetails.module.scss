@@ -34,6 +34,38 @@
         text-decoration: none;
         color: black;
         overflow: wrap;
+
+        background-image: linear-gradient(
+          to right,
+          $mainColor,
+          $mainColor 50%,
+          #000 50%
+        );
+
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .subtext:before {
+        content: "";
+        background: $mainColor;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+      }
+
+      .subtext:hover {
+        background-position: 0;
+      }
+
+      .subtext:hover::before {
+        width: 100%;
       }
     }
 
@@ -89,7 +121,6 @@
     .left {
       flex: 1;
       margin-top: 40px;
-      text-align: center;
     }
 
     .right {
@@ -100,5 +131,11 @@
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .left {
+    text-align: center;
   }
 }
