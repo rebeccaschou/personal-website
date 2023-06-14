@@ -21,17 +21,30 @@ export default function AboutDetails() {
           <h2 className={styles.header}>LINKEDIN</h2>
           <a
             href="https://www.linkedin.com/in/rebeccaschou/"
+            rel="noreferrer"
+            target="_blank"
             className={styles.subtext}
           >
             linkedin.com/in/rebeccaschou
           </a>
           <h2 className={styles.header}>GITHUB</h2>
-          <a href="https://github.com/rebeccaschou" className={styles.subtext}>
+          <a
+            href="https://github.com/rebeccaschou"
+            rel="noreferrer"
+            target="_blank"
+            className={styles.subtext}
+          >
             github.com/rebeccaschou
           </a>
         </div>
         <button className={styles[`resume-button`]}>
-          <a href="https://github.com/rebeccaschou">Download Resume</a>
+          <a
+            href="https://github.com/rebeccaschou"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Download Resume
+          </a>
         </button>
       </div>
       <div className={styles.right}>

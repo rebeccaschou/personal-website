@@ -2,27 +2,12 @@
 
 .fun {
   background-color: $backgroundColor;
+  text-align: center;
+  height: auto;
 
-  // .main {
-  //   flex: 0.5;
-  // }
-
-  // .footer {
-  //   flex: 0.5;
-
-  //   .social-buttons {
-  //     display: flex;
-
-  //     li {
-  //       list-style: none;
-  //       padding: 0 10px;
-  //       position: relative;
-
-  //       a {
-  //         text-decoration: none;
-  //         text-align: bottom;
-  //       }
-  //     }
-  //   }
-  // }
+  h1 {
+    padding-top: 30px;
+    color: $mainColor;
+    font-size: 50px;
+  }
 }
