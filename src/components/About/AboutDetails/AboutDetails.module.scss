@@ -2,70 +2,39 @@
 
 .about-details {
   background-color: white;
+  display: flex;
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    position: relative;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-
-    max-width: 50%;
-    max-height: 90%;
-
-    h1 {
-      font-size: 60px;
-      font-weight: 700;
-      text-align: center;
-      color: $mainColor;
-    }
-
-    .top-details {
-      display: flex;
-      flex-direction: row;
-      padding-top: 30px;
-
-      .left {
-        flex: 0.6;
-        justify-content: center;
-
-        .about-details-image {
-          width: 60%;
-          border-radius: 50%;
-          border: 5px solid white;
-          transform: translate(20%, 0%);
-        }
-      }
-
-      .summary {
-        flex: 0.4;
-        padding-top: 10px;
-
-        .header {
-          color: $mainColor;
-          font-size: 20px;
-          padding-top: 20px;
-        }
-
-        .subtext {
-          padding-top: 5px;
-          text-decoration: none;
-          color: black;
-        }
-      }
-    }
+  .left {
+    flex: 0.5;
+    padding-left: 8%;
+    padding-right: 7%;
+    padding-top: 5%;
+    color: $mainColor;
 
     .description {
       padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 40px;
-      padding-right: 40px;
+      font-size: 17px;
       color: $backgroundColor;
-      line-height: 1.4;
+      line-height: 1.3;
+    }
+
+    .summary {
+      flex: 0.4;
+      padding-top: 10px;
+      padding-bottom: 20px;
+
+      .header {
+        color: $mainColor;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+
+      .subtext {
+        padding-top: 5px;
+        text-decoration: none;
+        color: black;
+        overflow: wrap;
+      }
     }
 
     .resume-button {
@@ -96,6 +65,40 @@
     .resume-button:hover {
       opacity: 0.9;
       transform: translateY(-2px);
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    padding-top: 5%;
+    padding-right: 8%;
+
+    .about-details-image {
+      max-height: 90%;
+
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .about-details {
+    .left {
+      flex: 1;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .right {
+      flex: 0;
+      padding-right: 0%;
+
+      .about-details-image {
+        display: none;
+      }
     }
   }
 }
