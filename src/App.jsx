@@ -8,7 +8,7 @@ import "./App.scss";
 
 import React from "react";
 import { useState } from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +46,7 @@ function App() {
   ];
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -90,7 +90,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
