@@ -49,3 +49,11 @@
     margin-top: 8px;
   }
 }
+
+@media (max-height: 700px) {
+  .image {
+    max-height: none;
+    height: 280px;
+    width: 280px;
+  }
+}

@@ -20,3 +20,18 @@
     flex-direction: column;
   }
 }
+
+@media (max-height: 700px) {
+  .about {
+    min-height: 580px;
+    // height: 600px;
+
+    .left {
+      flex: 0.9;
+    }
+
+    .right {
+      flex: 0.1;
+    }
+  }
+}

@@ -24,3 +24,16 @@
     }
   }
 }
+
+@media (max-height: 700px) {
+  .app {
+    .sections {
+      height: auto;
+      scroll-snap-type: none;
+      > * {
+        height: auto;
+        scroll-snap-type: none;
+      }
+    }
+  }
+}
