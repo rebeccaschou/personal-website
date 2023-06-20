@@ -8,9 +8,9 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
     <div className={`${styles.navbar} ${menuOpen && styles.active}`}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <a href="/about" className={styles.logo}>
+          <Link to="/about" className={styles.logo}>
             rebecca.
-          </a>
+          </Link>
         </div>
         <div className={styles.right}>
           <ul className={styles.navitems}>
