@@ -19,26 +19,47 @@
 @media (max-width: 970px) {
   .project {
     flex-direction: column;
+    height: 700px;
 
     .left {
-      flex: 0.5;
+      flex: 0.6;
     }
 
     .right {
-      flex: 0.5;
+      flex: 0.4;
       position: relative;
     }
   }
 }
 
-@media (max-height: 620px), (max-width: 450) {
+@media (max-width: 600px) {
   .project {
+    height: 600px;
+  }
+}
+
+@media (max-width: 450px) {
+  .project {
+    height: 550px;
+
     .left {
-      flex: 0.4;
+      flex: 0.5;
     }
 
     .right {
-      flex: 0.6;
+      flex: 0.5;
     }
   }
 }
+
+// @media (max-height: 620px), (max-width: 450) {
+//   .project {
+//     .left {
+//       flex: 0.4;
+//     }
+
+//     .right {
+//       flex: 0.6;
+//     }
+//   }
+// }

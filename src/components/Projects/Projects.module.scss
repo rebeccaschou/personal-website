@@ -5,7 +5,8 @@
 // remove top: 90px (added strange scroll-padding to the top)
 .projects {
   width: 100%;
-  height: calc(100vh - 90px);
+  // height: calc(100vh - 90px);
+  // padding-bottom: 10px;
   background-color: $plainFontColor;
   position: relative;
   scroll-behavior: smooth;
@@ -19,5 +20,10 @@
     width: 100vw;
     height: calc(100vh - 90px);
     scroll-snap-align: start;
+  }
+}
+@media (max-width: 970px) {
+  .projects {
+    scroll-snap-type: none;
   }
 }
