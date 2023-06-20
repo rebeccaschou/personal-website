@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AboutDetails.module.scss";
+import photo from "../../../assets/profile/profile-photo-details.png";
 
 export default function AboutDetails() {
   return (
@@ -49,7 +50,7 @@ export default function AboutDetails() {
       </div>
       <div className={styles.right}>
         <img
-          src="assets/profile-photo-details.png"
+          src={photo}
           alt="profile"
           className={styles[`about-details-image`]}
         ></img>

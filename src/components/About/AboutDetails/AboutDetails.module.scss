@@ -140,3 +140,14 @@
     text-align: center;
   }
 }
+
+@media (max-height: 700px) {
+  .about-details {
+    .right {
+      .about-details-image {
+        max-height: 450px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

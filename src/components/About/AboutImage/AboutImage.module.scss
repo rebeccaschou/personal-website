@@ -1,7 +1,7 @@
 @import "../../../global.scss";
 
 .image {
-  background: url(../../../../public/assets/profile-photo-clear.png);
+  background: url(../../../assets/profile/profile-photo-clear.png);
   background-color: $mainColor;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,6 +51,14 @@
 }
 
 @media (max-height: 700px) {
+  .image {
+    max-height: none;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 1100px) {
   .image {
     max-height: none;
     height: 280px;
