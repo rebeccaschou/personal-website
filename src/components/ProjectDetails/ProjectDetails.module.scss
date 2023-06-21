@@ -2,12 +2,8 @@
 
 .project-details {
   background-color: white;
-  // background-color: rgb(255, 232, 236);
   display: flex;
-  //   .card {
-  //     background-color: white;
-  //     display: flex;
-  //     flex-direction: column;
+
   .left {
     flex: 0.5;
     padding-left: 8%;
@@ -201,86 +197,3 @@
 //   .summary {
 //     flex-direction: column;
 //   }
-// }
-// .project-details {
-//   background-color: rgb(255, 232, 236);
-//   // background-image: linear-gradient(white, rgba(255, 184, 194, 0.4));
-//   position: relative;
-
-//   .card {
-//     background-color: white;
-//     display: flex;
-//     flex-direction: column;
-
-//     // margin-left: auto;
-//     // margin-right: auto;
-
-//     transform: translate(-50%, -50%);
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     width: 60%;
-
-//     padding-left: 60px;
-//     padding-right: 60px;
-//     padding-bottom: 20px;
-
-//     max-width: 70%;
-//     max-height: 90%;
-//     border-radius: 30px;
-
-//     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-
-//     .tags {
-//       margin-top: 40px;
-//       display: flex;
-//     }
-
-//     .title {
-//       color: $mainColor;
-//       margin-top: 15px;
-//     }
-
-//     .description {
-//       margin-top: 30px;
-//       font-size: 18px;
-//       line-height: 1.5;
-//     }
-
-//     .bullets {
-//       display: flex;
-//       margin-top: 20px;
-
-//       .left {
-//         flex-direction: column;
-
-//         .bullet-text {
-//           padding-top: 5px;
-//           padding-bottom: 12px;
-//         }
-//       }
-
-//       .right {
-//         margin-left: 60px;
-
-//         .tool-list {
-//           padding-top: 5px;
-//           list-style-type: circle;
-//           margin-left: 0px;
-//           padding-left: 15px;
-
-//           li {
-//             padding-bottom: 3px;
-//             display: list-item;
-//             overflow-x: visible;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .title-minor {
-//   color: $mainColor;
-//   font-size: 18px;
-// }
