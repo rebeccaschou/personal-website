@@ -74,6 +74,7 @@ function App() {
                   role={projects[0].role}
                   timeline={projects[0].timeline}
                   tools={projects[0].tools}
+                  image={projects[0].image}
                 />
               }
             ></Route>
@@ -88,6 +89,7 @@ function App() {
                   role={projects[1].role}
                   timeline={projects[1].timeline}
                   tools={projects[1].tools}
+                  image={projects[1].image}
                 />
               }
             ></Route>
