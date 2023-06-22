@@ -8,7 +8,7 @@
   height: auto;
 
   .intro {
-    color: $mainColor;
+    color: $plainFontColor;
     margin-bottom: 20px;
   }
 
@@ -42,6 +42,14 @@
       -webkit-column-width: 100%;
       -moz-column-width: 100%;
       column-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .minor-projects {
+    .intro {
+      font-size: 26px;
     }
   }
 }

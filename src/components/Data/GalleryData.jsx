@@ -9,15 +9,25 @@ import img7 from "../../assets/gallery/reebok-line-drawing.png";
 import img8 from "../../assets/gallery/castle-mosaic.png";
 
 const images = [
-  { id: 0, src: img0, alt: "blind contour" },
-  { id: 1, src: img1, alt: "ceramic cupcake" },
-  { id: 2, src: img2, alt: "crochet tobi" },
-  { id: 3, src: img3, alt: "cross hatch car dog" },
-  { id: 4, src: img4, alt: "grayscale car dog" },
-  { id: 5, src: img5, alt: "ocean painting" },
-  { id: 6, src: img6, alt: "puzzle mug" },
-  { id: 7, src: img7, alt: "reebok line drawing" },
-  { id: 8, src: img8, alt: "castle mosaic" },
+  { id: 0, src: img0, alt: "blind contour", caption: "blind contour" },
+  { id: 1, src: img1, alt: "ceramic cupcake", caption: "ceramic cupcake" },
+  { id: 2, src: img2, alt: "crochet tobi", caption: "crochet tobi" },
+  {
+    id: 3,
+    src: img3,
+    alt: "cross hatch car dog",
+    caption: "cross hatch car dog",
+  },
+  { id: 4, src: img4, alt: "grayscale car dog", caption: "grayscale car dog" },
+  { id: 5, src: img5, alt: "ocean painting", caption: "ocean painting" },
+  { id: 6, src: img6, alt: "puzzle mug", caption: "puzzle mug" },
+  {
+    id: 7,
+    src: img7,
+    alt: "reebok line drawing",
+    caption: "reebok line drawing",
+  },
+  { id: 8, src: img8, alt: "castle mosaic", caption: "castle mosaic" },
 ];
 
 export default images;

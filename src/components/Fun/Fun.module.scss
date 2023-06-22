@@ -5,6 +5,23 @@
   text-align: center;
   height: auto;
 
+  .text {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    h1 {
+      color: $mainColor;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $plainFontColor;
+    }
+  }
+
   .gallery {
     width: 80%;
     margin-left: auto;
@@ -19,9 +36,17 @@
     column-width: 33%;
     padding: 0px 12px;
 
+    padding-bottom: 40px;
+
     .pic {
       max-width: 100%;
-      padding-bottom: 12px;
+      padding-top: 12px;
+    }
+
+    .caption {
+      text-align: left;
+      color: $plainFontColor;
+      padding-top: 5px;
     }
   }
 }
