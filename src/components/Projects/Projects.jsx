@@ -19,7 +19,7 @@ export default function Projects(props) {
           />
         ))}
       </div>
-      <MinorProjects />
+      <MinorProjects array={props.array} />
     </div>
   );
 }
