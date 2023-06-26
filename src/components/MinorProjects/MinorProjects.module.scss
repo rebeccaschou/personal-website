@@ -10,6 +10,8 @@
   .intro {
     color: $plainFontColor;
     margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .gallery {
@@ -50,6 +52,14 @@
   .minor-projects {
     .intro {
       font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .minor-projects {
+    .intro {
+      font-size: 22px;
     }
   }
 }
