@@ -3,6 +3,7 @@ import styles from "./ProjectDetails.module.scss";
 import { Link } from "react-router-dom";
 
 import ProjectTag from "./ProjectTag/ProjectTag";
+import Paragraph from "./Paragraph/Paragraph";
 
 export default function ProjectDetails(props) {
   return (
@@ -20,7 +21,10 @@ export default function ProjectDetails(props) {
             <ProjectTag title={tag} />
           ))}
         </div>
-        <p className={styles.description}>{props.description}</p>
+        {/* <p className={styles.description}>{props.description}</p> */}
+        {props.description.map((text) => (
+          <Paragraph text={text}></Paragraph>
+        ))}
         <div className={styles.summary}>
           <div className={styles[`summary-left`]}>
             <h2 className={styles[`header`]}>MY ROLE</h2>
