@@ -6,9 +6,11 @@ export default function Fun(props) {
     <div className={styles.fun} id="fun">
       <div className={styles.text}>
         <h1>For fun!</h1>
-        <p>Coming soon—little crafts and pieces I've done in my free time!</p>
+        <p>
+          A small gallery of the crafts and pieces I've made in my free time!
+        </p>
       </div>
-      {/* <div className={styles.gallery}>
+      <div className={styles.gallery}>
         {props.images.map((item, index) => {
           return (
             <div key={index}>
@@ -17,7 +19,7 @@ export default function Fun(props) {
             </div>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 }
