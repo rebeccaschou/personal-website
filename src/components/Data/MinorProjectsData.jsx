@@ -21,7 +21,7 @@ const minorProjects = [
     title: "Connect Four\u2122 AI Opponent",
     tags: ["Minimax", "ReasonML"],
     description:
-      "Implemented Connect4, playable in the terminal against an AI opponent that uses a minimax algorithm to simulate intelligent decisions. Worked with Nicholas Jankovic.",
+      "Implemented Connect Four\u2122, playable in the terminal against an AI opponent that uses a minimax algorithm to simulate intelligent decisions. Worked with Nicholas Jankovic.",
   },
   // {
   //   image: website,
