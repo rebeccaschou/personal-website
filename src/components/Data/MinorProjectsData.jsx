@@ -18,7 +18,7 @@ const minorProjects = [
   },
   {
     // image: peditools,
-    title: "Connect4 AI Opponent",
+    title: "Connect Four\u2122 AI Opponent",
     tags: ["Minimax", "ReasonML"],
     description:
       "Implemented Connect4, playable in the terminal against an AI opponent that uses a minimax algorithm to simulate intelligent decisions. Worked with Nicholas Jankovic.",
