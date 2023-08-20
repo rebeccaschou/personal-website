@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5ec8216.css",
-    "main.js": "/static/js/main.5382bff3.js",
+    "main.css": "/static/css/main.d72ad5c1.css",
+    "main.js": "/static/js/main.260f84ad.js",
     "static/media/profile-photo-clear.png": "/static/media/profile-photo-clear.37885b9fa339a3ea33f8.png",
     "static/media/ocean-painting.png": "/static/media/ocean-painting.6348a29aa3f8a9b4166f.png",
     "static/media/castle-mosaic.png": "/static/media/castle-mosaic.a23f339a972e2f568741.png",
@@ -17,11 +17,11 @@
     "static/media/peditools-image.png": "/static/media/peditools-image.e7d45dfe938e1823ef0e.png",
     "static/media/martial-arts-app-image.png": "/static/media/martial-arts-app-image.c830ef1a3d178bbf379c.png",
     "index.html": "/index.html",
-    "main.b5ec8216.css.map": "/static/css/main.b5ec8216.css.map",
-    "main.5382bff3.js.map": "/static/js/main.5382bff3.js.map"
+    "main.d72ad5c1.css.map": "/static/css/main.d72ad5c1.css.map",
+    "main.260f84ad.js.map": "/static/js/main.260f84ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5ec8216.css",
-    "static/js/main.5382bff3.js"
+    "static/css/main.d72ad5c1.css",
+    "static/js/main.260f84ad.js"
   ]
 }
