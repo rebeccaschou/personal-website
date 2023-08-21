@@ -31,7 +31,7 @@ function App() {
         <div className="sections">
           <Routes>
             {/* First section of routes do NOT connect to main app body */}
-            <Route path="/quickbili" element={<QuickBili />}></Route>
+            <Route path="/quickbili/privacy" element={<QuickBili />}></Route>
             {/* Routes below connect to main website body */}
             <Route path="/" element={<About />}></Route>
             <Route path="/about" element={<About />}></Route>
