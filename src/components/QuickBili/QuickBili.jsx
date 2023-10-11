@@ -49,6 +49,10 @@ export default function QuickBili() {
         We will not save or analyze any data entered into the inputs for our
         medical calculator.
       </p>
+      <h1 className={styles.header}>Support</h1>
+      <p className={styles.description}>
+        Contact rstchou@gmail.com for support.
+      </p>
     </div>
   );
 }
