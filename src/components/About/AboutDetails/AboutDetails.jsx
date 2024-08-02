@@ -8,11 +8,12 @@ export default function AboutDetails() {
       <div className={styles.left}>
         <h1 classNames={styles.greeting}>Hi, I'm Rebecca!</h1>
         <p className={styles.description}>
-          I'm a sophomore studying computer science on a software track at Brown
-          University. I'm interested in the intersection of social justice and
-          technology. Outside of class, I'm co-mentorship chair for Brown's
-          Women in Computer Science (WiCS) organization and a teaching assistant
-          for the Data Structures and Algorithms class (CSCI0200). <br></br>
+          I'm a junior studying computer science and literary arts at Brown
+          University, with a focus on mobile engineering. Outside of class, I'm
+          a research assistant for the Human-Computer Interaction Lab, head
+          teaching assistant for CS200: Data Structures and Algorithms, and
+          technology chair of the Brown's Women in Computer Science (WiCS)
+          organization. <br></br>
           <br></br> In my free time, I love to crochet, care for my houseplants,
           and compete on the Brown Taekwondo team. I'm currently learning how to
           make amigurumi birds! Please feel free to reach out to me at

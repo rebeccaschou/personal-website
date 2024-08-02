@@ -10,8 +10,8 @@ export default function AboutText() {
     <div className={styles.text}>
       <h1 className={styles.header}>Welcome!</h1>
       <p className={styles.description}>
-        I'm <span>Rebecca Chou</span>, a sophomore studying computer science at
-        Brown University!
+        I'm <span>Rebecca Chou</span>, a student at Brown University and an
+        aspiring mobile engineer!
       </p>
       <button className={styles[`projects-button`]}>
         <Link to="/projects">Go to Projects</Link>
