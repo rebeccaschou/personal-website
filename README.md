@@ -9,3 +9,8 @@ Instructions to run locally:
 
 - Clone the repository
 - Run `npm install` and `npm start` to run on localhost
+
+Instructions to publish updates:
+
+- Run `npm run deploy` to create the deploy build
+- Make sure to push changes!
