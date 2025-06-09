@@ -1,7 +1,4 @@
-import React from "react";
 import styles from "./HomeText.module.scss";
-
-import { Link } from "react-router-dom";
 
 export default function HomeText() {
   return (
@@ -11,9 +8,6 @@ export default function HomeText() {
         I'm <span>Rebecca Chou</span>, a student at Brown University and an
         aspiring mobile engineer!
       </p>
-      {/* <button className={styles[`projects-button`]}>
-        <a href="/home#projects-section">Go to Projects</a>
-      </button> */}
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./QuickBili.module.scss";
 
 export default function QuickBili() {

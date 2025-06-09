@@ -1,4 +1,3 @@
-import React from "react";
 import "./ProjectButton.module.scss";
 import styles from "./ProjectButton.module.scss";
 

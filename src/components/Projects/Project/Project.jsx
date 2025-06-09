@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Project.module.scss";
 
 import ProjectImage from "./ProjectImage/ProjectImage";

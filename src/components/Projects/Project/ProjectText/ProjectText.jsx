@@ -1,6 +1,4 @@
-import React from "react";
 import styles from "./ProjectText.module.scss";
-
 import ProjectButton from "../ProjectButton/ProjectButton";
 
 export default function ProjectText(props) {

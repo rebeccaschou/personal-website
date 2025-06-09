@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Fun.module.scss";
 
 export default function Fun(props) {
