@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@import "/src/global.scss";
 
 .bottom-bar {
   width: 100%;
@@ -19,6 +19,30 @@
       background-color: $paleFontColor;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    .text {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .contacts{
+        display: flex;
+        flex-direction: row;
+
+        .contact {
+          padding-left: 20px;
+          transition: 0.2s ease-in-out;
+          text-decoration: none;
+          color: $backgroundColor;
+        }
+
+        .contact:hover {
+          color: $mainColor;
+          transform: translateY(-2px);
+        }
+      }
     }
   }
 }
