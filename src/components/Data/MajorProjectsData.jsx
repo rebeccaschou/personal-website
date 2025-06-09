@@ -4,7 +4,7 @@ import tangsoodo from "../../assets/projects/martial-arts-app-image.png";
 const majorProjects = [
   {
     color: [139, 182, 189],
-    id: "project2",
+    id: "martial-arts-app",
     title: "Martial Arts App",
     tags: ["Mobile iOS", "Swift"],
     role: "Mobile App Developer (iOS)",
@@ -21,7 +21,7 @@ const majorProjects = [
   },
   {
     color: [255, 182, 193],
-    id: "project1",
+    id: "personal-website",
     title: "Personal Website",
     tags: ["React", "UI/UX", "HTML", "CSS"],
     role: "Web Developer",

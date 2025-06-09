@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.bottom-bar {
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+  background-color: $secondaryBackgroundColor;
+  display: flex;
+  justify-content: space-around;
+
+  .container {
+    width: 90%;
+
+    .divider {
+      border: none;
+      height: 1.5px;
+      background-color: $paleFontColor;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

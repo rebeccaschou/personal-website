@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Navbar.module.scss";
+import styles from "./NavigationBar.module.scss";
 
 import { Link } from "react-router-dom";
 
@@ -8,20 +8,20 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
     <div className={`${styles.navbar} ${menuOpen && styles.active}`}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <Link to="/about" className={styles.logo}>
-            rebecca.
+          <Link to="/" className={styles.logo}>
+            周思恬
           </Link>
         </div>
         <div className={styles.right}>
           <ul className={styles.navitems}>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/">home</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/about">about</Link>
             </li>
             <li>
-              <Link to="/forfun">For Fun</Link>
+              <Link to="/forfun">for fun</Link>
             </li>
           </ul>
           <div

@@ -1,22 +1,61 @@
-import React from "react";
 import styles from "./About.module.scss";
 
-import AboutImage from "./AboutImage/AboutImage";
-import AboutText from "./AboutText/AboutText";
-import AboutDetails from "./AboutDetails/AboutDetails";
+import BottomBar from "../BottomBar/BottomBar";
+import photo from "../../assets/profile/profile-photo-details.png";
 
 export default function About() {
   return (
-    <React.Fragment>
-      <div className={styles.about} id="about">
-        <div className={styles.left}>
-          <AboutImage />
+    <div className={styles[`about-details`]} id="about-details">
+      <div className={styles.left}>
+        <h1 classNames={styles.greeting}>Hi, I'm Rebecca!</h1>
+        <p className={styles.description}>
+          I'm a junior studying computer science and literary arts at Brown
+          University, with a focus on mobile engineering. Outside of class, I'm
+          a research assistant for the Human-Computer Interaction Lab, head
+          teaching assistant for CS200: Data Structures and Algorithms, and
+          technology chair of the Brown's Women in Computer Science (WiCS)
+          organization.
+        </p>
+        <p className={styles.description}>In my free time, I love to crochet, care for my houseplants,
+          and compete on the Brown Taekwondo team. I'm currently learning how to
+          make amigurumi birds! Please feel free to reach out to me at rebecca_chou@brown.edu if you’d like to chat!</p>
+        <div className={styles.summary}>
+          <h2 className={styles.header}>LINKEDIN</h2>
+          <a
+            href="https://www.linkedin.com/in/rebeccaschou/"
+            rel="noreferrer"
+            target="_blank"
+            className={styles.subtext}
+          >
+            linkedin.com/in/rebeccaschou
+          </a>
+          <h2 className={styles.header}>GITHUB</h2>
+          <a
+            href="https://github.com/rebeccaschou"
+            rel="noreferrer"
+            target="_blank"
+            className={styles.subtext}
+          >
+            github.com/rebeccaschou
+          </a>
         </div>
-        <div className={styles.right}>
-          <AboutText />
-        </div>
+        <button className={styles[`resume-button`]}>
+          <a
+            href="https://drive.google.com/file/d/1KIhP6idzTK5od9DOWZOdo4_GsjSvzsRD/view?usp=drive_link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Download Resume
+          </a>
+        </button>
       </div>
-      <AboutDetails />
-    </React.Fragment>
+      <div className={styles.right}>
+        <img
+          src={photo}
+          alt="profile"
+          className={styles[`about-details-image`]}
+        ></img>
+      </div>
+    </div>
   );
 }

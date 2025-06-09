@@ -1,0 +1,69 @@
+@import "../../../global.scss";
+
+.project-details {
+  background-color: $secondaryBackgroundColor;
+  height: auto;
+  text-align: center;
+
+  .image {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50%;
+
+    font-weight: 250;
+    font-size: 15px;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 25px;
+      font-weight: 250;
+      padding-bottom: 10px;
+    }
+
+    .text-section {
+      padding: 0px 30px;
+      text-align: left;
+      font-weight: 250;
+      line-height: 1.5;
+
+      .header {
+        font-weight: 200;
+        font-size: 16px;
+        text-align: left;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .summary {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .summary-header {
+      font-weight: 500;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+.divider {
+  border: none;
+  height: 1.5px;
+  background-color: $softFontColor;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

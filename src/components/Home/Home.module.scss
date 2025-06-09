@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.about {
+  background-color: $backgroundColor;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    position: relative;
+  }
+
+  .right {
+    flex: 0.5;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1100px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+@media (max-height: 700px) {
+  .about {
+    min-height: 500px;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 1100px) {
+  .about {
+    min-height: 580px;
+    // height: 600px;
+
+    .left {
+      flex: 0.9;
+    }
+
+    .right {
+      flex: 0.1;
+    }
+  }
+}
+
+// @media (min-width: 600px) {
+//   .about {
+//     height: calc(100vh - 90px);
+//     scroll-snap-align: start;
+//   }
+// }

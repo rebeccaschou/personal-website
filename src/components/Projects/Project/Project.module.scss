@@ -1,0 +1,69 @@
+@import "../../../global.scss";
+
+.project {
+  border-radius: 40px;
+  color: $backgroundColor;
+  display: flex;
+  height: auto;
+
+  .projectCard {
+    border-radius: 20px;
+    display: flex;
+
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    width: 100%;
+    height: 500px;
+
+    .left {
+      background-color: $secondaryMainColor;
+      flex: 0.6;
+      position: relative;
+      overflow-y: hidden;
+    }
+
+    .right {
+      background-color: $tertiaryBackgroundColor;
+      padding-left: 60px;
+      flex: 0.4;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .project {
+    flex-direction: column;
+    height: 700px;
+
+    .left {
+      flex: 0.6;
+    }
+
+    .right {
+      flex: 0.4;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    height: 600px;
+  }
+}
+
+@media (max-width: 450px) {
+  .project {
+    height: 550px;
+
+    .left {
+      flex: 0.5;
+    }
+
+    .right {
+      flex: 0.5;
+    }
+  }
+}

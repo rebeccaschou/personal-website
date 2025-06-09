@@ -1,0 +1,12 @@
+@import "../../../../global.scss";
+
+.arrow-button {
+  font-size: 40px;
+  color: $mainColor;
+  transition: 0.2s ease-in-out;
+}
+
+.arrow-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
