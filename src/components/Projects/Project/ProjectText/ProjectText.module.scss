@@ -33,6 +33,18 @@
     text-align: center;
     top: 5%;
 
+    .header {
+      font-size: 26px;
+    }
+
+    .tags {
+      font-size: 16px;
+    }
+
+    .description {
+      font-size: 16px;
+    }
+
     .description {
       inline-size: auto;
       margin-left: 8%;
@@ -44,15 +56,15 @@
 @media (max-width: 600px) {
   .text {
     .header {
-      font-size: 26px;
+      font-size: 20px;
     }
 
     .tags {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     .description {
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }

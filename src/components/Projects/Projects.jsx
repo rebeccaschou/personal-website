@@ -16,6 +16,7 @@ export default function Projects(props) {
         </div>
         {props.projects.map((project) => (
           <Project
+            color={project.color}
             id={project.id}
             title={project.title}
             tags={project.tags}

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function ProjectButton(props) {
   return (
     <Link to={"/" + props.id}>
-      <HiArrowRightCircle className={styles[`arrow-button`]}/>
+      <HiArrowRightCircle className={styles[`arrow-button`]} style={{color: props.color}}/>
     </Link>
   );
 }

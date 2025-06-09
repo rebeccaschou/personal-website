@@ -1,9 +1,11 @@
 import styles from "./ProjectDetails.module.scss";
 import BottomBar from "../../BottomBar/BottomBar"
+import chirp from "../../../assets/projects/chirp.png";
 
 export default function Chirp() {
   return (
     <div className={styles[`project-details`]} id="chirp">
+      <img className={styles.image} src={chirp} alt=""></img>
       <div className={styles.container}>
         <h1 classNames={styles.title} style={{ color: 'rgb(69, 80, 173)' }}>Chirp</h1>
         <h2 classNames={styles.description}>Transforming a research tool into an organic social platform</h2>

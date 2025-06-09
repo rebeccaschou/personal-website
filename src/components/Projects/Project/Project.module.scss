@@ -1,12 +1,12 @@
 @import "../../../global.scss";
 
 .project {
-  border-radius: 40px;
+  // border-radius: 40px;
   color: $backgroundColor;
   display: flex;
   height: auto;
 
-  .projectCard {
+  .project-card {
     border-radius: 20px;
     display: flex;
 
@@ -18,7 +18,7 @@
     height: 500px;
 
     .left {
-      background-color: $secondaryMainColor;
+      // background-color: $secondaryMainColor;
       flex: 0.6;
       position: relative;
       overflow-y: hidden;
@@ -34,36 +34,35 @@
 
 @media (max-width: 970px) {
   .project {
-    flex-direction: column;
-    height: 700px;
+    .project-card {
+      flex-direction: column;
 
-    .left {
-      flex: 0.6;
-    }
+      .right {
+        flex: 0.5;
+        position: relative;
 
-    .right {
-      flex: 0.4;
-      position: relative;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
     }
   }
 }
 
 @media (max-width: 600px) {
   .project {
-    height: 600px;
-  }
-}
+    .project-card {
+      border-radius: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
 
-@media (max-width: 450px) {
-  .project {
-    height: 550px;
+      .left {
+        flex: 0.4;
+      }
 
-    .left {
-      flex: 0.5;
-    }
-
-    .right {
-      flex: 0.5;
+      .right {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
     }
   }
 }
