@@ -8,7 +8,6 @@
   .image {
     width: 50%;
     padding-top: 50px;
-    padding-bottom: 30px;
   }
 
   .container {
@@ -66,4 +65,45 @@
   background-color: $softFontColor;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .project-details {
+    .image {
+      width: 60%;
+    }
+
+    .container {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .project-details {
+        .image {
+      width: 70%;
+    }
+
+    .container {
+      width: 90%;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .text-section {
+        padding: 0px 10px;
+      }
+    }
+
+    .summary {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 }
