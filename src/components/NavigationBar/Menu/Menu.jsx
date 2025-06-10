@@ -6,13 +6,13 @@ export default function Menu({ menuOpen, setMenuOpen }) {
     <div className={`${styles.menu} ${menuOpen && styles.active}`}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <Link to="/about">About</Link>
+          <Link to="/">home</Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <Link to="/projects">Projects</Link>
+          <Link to="/about">about</Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <Link to="/forfun">For Fun</Link>
+          <Link to="/writing">writing</Link>
         </li>
       </ul>
     </div>

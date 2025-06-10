@@ -7,7 +7,9 @@ export default function Piece(props) {
       <Link to={"/writing/" + props.id} className={styles[`piece-container`]}>
         <hr className={styles.divider}></hr>
         <div className={styles.contents}>
-          <img className={styles.image} src={props.image} alt={props.alt}></img>
+          <div className={styles[`image-container`]}>
+            <img className={styles.image} src={props.image} alt={props.alt}></img>
+          </div>
           <div className={styles.info}>
             <h1>{props.title}</h1>
             <p className={styles.header}>MEDIA</p>
