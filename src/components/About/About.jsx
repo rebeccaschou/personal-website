@@ -1,6 +1,4 @@
 import styles from "./About.module.scss";
-
-import BottomBar from "../BottomBar/BottomBar";
 import photo from "../../assets/profile/profile-photo-details.png";
 
 export default function About() {
@@ -9,16 +7,17 @@ export default function About() {
       <div className={styles.left}>
         <h1 classNames={styles.greeting}>Hi, I'm Rebecca!</h1>
         <p className={styles.description}>
-          I'm a junior studying computer science and literary arts at Brown
-          University, with a focus on mobile engineering. Outside of class, I'm
-          a research assistant for the Human-Computer Interaction Lab, head
-          teaching assistant for CS200: Data Structures and Algorithms, and
-          technology chair of the Brown's Women in Computer Science (WiCS)
+          I'm a senior studying computer science and literary arts at Brown
+          University. Outside of class, I do research with the Human-Computer 
+          Interaction Lab and the Secure Systems Lab. Formerly, I served as a 
+          head teaching assistant for CS200: Data Structures and Algorithms and
+          the technology chair of the Brown's Women in Computer Science (WiCS)
           organization.
         </p>
-        <p className={styles.description}>In my free time, I love to crochet, care for my houseplants,
-          and compete on the Brown Taekwondo team. I'm currently learning how to
-          make amigurumi birds! Please feel free to reach out to me at rebecca_chou@brown.edu if you’d like to chat!</p>
+        <p className={styles.description}>In my free time, I love to crochet, 
+          care for my houseplants, and compete on the Brown Taekwondo team. I'm 
+          currently learning how to make amigurumi birds! Please feel free to 
+          reach out to me at rebecca_chou@brown.edu if you’d like to chat!</p>
         <div className={styles.summary}>
           <h2 className={styles.header}>LINKEDIN</h2>
           <a
