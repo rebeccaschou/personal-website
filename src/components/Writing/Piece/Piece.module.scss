@@ -15,7 +15,7 @@
       justify-content: center;
 
       .image-container {
-        flex: 0.3;
+        flex: 0.35;
 
         .image {
           max-width: 100%;
@@ -24,7 +24,7 @@
       }
 
       .info {
-        flex: 0.7;
+        flex: 0.65;
         padding-left: 30px;
         font-size: 15px;
         line-height: 1.5;
@@ -62,9 +62,11 @@
       .contents {
         flex-direction: column;
         text-align: center;
+
         .image-container {
           .image {
-            max-width: 300px;
+            max-height: 300px;
+            max-width: 100%;
             border-radius: 10px;
           }
         }
@@ -77,6 +79,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .piece {
+    .piece-container {
+      width: 80%;
     }
   }
 }

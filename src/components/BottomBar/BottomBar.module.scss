@@ -46,3 +46,32 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .bottom-bar {
+    // height: 120px;
+
+    .container {
+      .text {
+        text-align: center;
+        flex-direction: column-reverse;
+        padding-left: 20%;
+        padding-right: 20%;
+
+        .copyright {
+          font-size: 12px;
+        }
+
+        .contacts {
+          text-align: left;
+          justify-content: space-between;
+
+          .contact {
+            padding-bottom: 10px;
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
