@@ -1,0 +1,27 @@
+@import "/src/global.scss";
+
+.writing {
+  background-color: $secondaryBackgroundColor;
+  text-align: center;
+  height: auto;
+
+  .writing-header {
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 20px;
+    // color: $mainColor;
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+
+    p {
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+
+    .arrow {
+      font-weight: 800;
+    }
+  }
+}

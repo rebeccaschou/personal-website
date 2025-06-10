@@ -1,0 +1,55 @@
+@import "/src/global.scss";
+
+.piece {
+  background-color: $secondaryBackgroundColor;
+  display: flex;
+  justify-content: center;
+
+  .piece-container {
+    width: 60%;
+    text-decoration: none;
+    color: $backgroundColor;
+
+    .contents {
+      display: flex;
+
+      .image {
+        flex: 0.3;
+        border-radius: 10px;
+      }
+
+      .info {
+        flex: 0.7;
+        padding-left: 30px;
+        font-size: 15px;
+        line-height: 1.5;
+
+        // .link {
+          text-decoration: none;
+          padding-top: 10px;
+
+          h1 {
+            font-weight: 600;
+            color: $backgroundColor;
+          }
+        // }
+
+        .header {
+          font-weight: 200;
+          font-size: 16px;
+          text-align: left;
+          padding-top: 15px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.divider {
+  border: none;
+  height: 1.5px;
+  background-color: $paleFontColor;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -10,7 +10,7 @@ export default function Projects(props) {
     <div>
       <div className={styles.projects} id="projects">
         <div className={styles[`projects-header`]}>
-          <p>featured works</p>
+          <p>featured projects</p>
           <HiArrowLongDown className={styles.arrow} />
         </div>
         {props.projects.map((project) => (

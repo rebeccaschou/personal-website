@@ -14,7 +14,9 @@ export default function Fun(props) {
           return (
             <div key={index}>
               <img className={styles.pic} src={item.src} alt={item.alt} />
-              <p className={styles.caption}>{item.caption}</p>
+              <div className={styles[`caption-container`]}>
+                <p className={styles.caption}>{item.caption}</p>
+              </div>
             </div>
           );
         })}

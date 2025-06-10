@@ -19,8 +19,11 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
               <Link to="/about">about</Link>
             </li>
             <li>
-              <Link to="/forfun">for fun</Link>
+              <Link to="/writing">writing</Link>
             </li>
+            {/* <li>
+              <Link to="/forfun">for fun</Link>
+            </li> */}
           </ul>
           <div
             className={styles.hamburger}
