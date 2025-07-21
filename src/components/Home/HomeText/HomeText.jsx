@@ -6,7 +6,7 @@ export default function HomeText() {
       <h1 className={styles.header}>Welcome!</h1>
       <p className={styles.description}>
         I'm <span>Rebecca Chou</span>, a student at Brown University and an
-        aspiring mobile engineer!
+        aspiring software engineer!
       </p>
     </div>
   );

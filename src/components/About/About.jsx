@@ -40,11 +40,11 @@ export default function About() {
         </div>
         <button className={styles[`resume-button`]}>
           <a
-            href="https://drive.google.com/file/d/1KIhP6idzTK5od9DOWZOdo4_GsjSvzsRD/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1l10pKisl118ZbTTw76eZZAJElrUV6NCc/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
           >
-            Download Resume
+            Download CV
           </a>
         </button>
       </div>
