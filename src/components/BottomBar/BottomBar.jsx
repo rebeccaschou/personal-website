@@ -12,7 +12,7 @@ export default function BottomBar() {
           <div className={styles.contacts}>
             <a href="https://github.com/rebeccaschou" rel="noreferrer" target="_blank" className={styles.contact}>GitHub</a>
             <a href="https://www.linkedin.com/in/rebeccaschou/" rel="noreferrer" target="_blank" className={styles.contact}>LinkedIn</a>
-            <a href="https://drive.google.com/file/d/1l10pKisl118ZbTTw76eZZAJElrUV6NCc/view?usp=sharing" rel="noreferrer" target="_blank" className={styles.contact}>Curriculum Vitae</a>
+            <a href="https://drive.google.com/file/d/1SYiJz-Fg2-nqP6rGwvw2f40fkPdaWgQF/view?usp=sharing" rel="noreferrer" target="_blank" className={styles.contact}>Curriculum Vitae</a>
           </div>
         </div>
       </div>

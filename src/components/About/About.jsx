@@ -40,7 +40,7 @@ export default function About() {
         </div>
         <button className={styles[`resume-button`]}>
           <a
-            href="https://drive.google.com/file/d/1l10pKisl118ZbTTw76eZZAJElrUV6NCc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1SYiJz-Fg2-nqP6rGwvw2f40fkPdaWgQF/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
           >
