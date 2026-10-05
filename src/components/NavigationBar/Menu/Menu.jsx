@@ -1,18 +1,40 @@
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import styles from "./Menu.module.scss";
-import { Link } from "react-router-dom";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: targetId } });
+    } else {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
-    <div className={`${styles.menu} ${menuOpen && styles.active}`}>
+    <div className={`${styles.menu} ${menuOpen ? styles.active : ""}`}>
       <ul>
-        <li onClick={() => setMenuOpen(false)}>
-          <Link to="/">home</Link>
+        <li>
+          <a href="/#about" onClick={(e) => handleNavClick(e, "about")}>
+            Home
+          </a>
         </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <Link to="/about">about</Link>
+        <li>
+          <a href="/#research" onClick={(e) => handleNavClick(e, "research")}>
+            Research
+          </a>
         </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <Link to="/writing">writing</Link>
+        <li>
+          <Link to="/cv" onClick={() => setMenuOpen(false)}>
+            CV
+          </Link>
         </li>
       </ul>
     </div>

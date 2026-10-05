@@ -1,0 +1,17 @@
+@import "/src/global.scss";
+
+.footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 4rem; /* Separation from main page content */
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+
+  p {
+    color: $paleFontColor;
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0.75;
+    letter-spacing: 0.2px;
+  }
+}

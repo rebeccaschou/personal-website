@@ -3,26 +3,6 @@
 .app {
   background-color: $backgroundColor;
   height: 100vh;
-
-  .sections {
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-color: $backgroundColor;
-    position: relative;
-    top: 80px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    > * {
-      width: 100vw;
-      height: calc(100vh - 80px);
-      scroll-snap-align: start;
-    }
-  }
 }
 
 @media (max-height: 700px) {

@@ -1,0 +1,239 @@
+@import "/src/global.scss";
+
+.pageWrapper {
+  background-color: $backgroundColor;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  h2 {
+    color: $plainFontColor;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background-color: $mainColor;
+    border-radius: 2px;
+    margin: 1.25rem 0 2rem 0;
+  }
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .downloadBtn {
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $mainColor;
+      color: $backgroundColor;
+    }
+  }
+}
+
+.cvContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .cvGroup {
+    h3 {
+      color: $mainColor;
+      font-size: 1.1rem;
+      margin: 0 0 1.25rem 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 0.4rem;
+    }
+
+    .cvItem {
+      background-color: rgba(255, 255, 255, 0.02);
+      padding: 1.25rem;
+      border-left: 3px solid $mainColor;
+      margin-bottom: 1.25rem;
+      border-radius: 0 6px 6px 0;
+
+      .cvItemHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+
+        h4 {
+          color: $plainFontColor;
+          font-size: 1.1rem;
+          margin: 0;
+        }
+
+        .date {
+          color: $paleFontColor;
+          font-size: 0.85rem;
+          white-space: nowrap;
+        }
+      }
+
+      .subtext {
+        color: $mainColor;
+        font-size: 0.9rem;
+        margin: 0.35rem 0 0.5rem 0;
+        font-weight: 500;
+      }
+
+      .details {
+        color: $paleFontColor;
+        font-size: 0.9rem;
+        margin: 0;
+        line-height: 1.55;
+
+        strong {
+          color: $plainFontColor;
+        }
+      }
+    }
+  }
+}
+
+.bulletList {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+  color: $paleFontColor;
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  li {
+    margin-bottom: 0.4rem;
+
+    strong {
+      color: $plainFontColor;
+    }
+  }
+}
+
+.pubBlock {
+  margin-bottom: 1.25rem;
+
+  h5 {
+    color: $plainFontColor;
+    font-size: 0.95rem;
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+/* Awards Table-Style List */
+.awardsList {
+  display: flex;
+  flex-direction: column;
+
+  .awardRow {
+    display: grid;
+    /* [Left] Award | [Middle] School/Institution | [Right] Date */
+    grid-template-columns: 1.5fr 2fr 100px;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0.65rem 0;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+
+    .awardTitle {
+      color: $plainFontColor;
+      font-weight: 600;
+    }
+
+    .institution {
+      color: $paleFontColor;
+    }
+
+    .date {
+      color: $mainColor;
+      font-weight: 500;
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+}
+
+/* Service Table-Style List */
+.serviceList {
+  display: flex;
+  flex-direction: column;
+
+  .serviceRow {
+    display: grid;
+    /* [Left] Position | [Middle] Organization | [Right] Years */
+    grid-template-columns: 1.5fr 2fr 110px;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0.65rem 0;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+
+    .position {
+      color: $plainFontColor;
+      font-weight: 600;
+    }
+
+    .organization {
+      color: $paleFontColor;
+    }
+
+    .date {
+      color: $mainColor;
+      font-weight: 500;
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .cvItemHeader {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .awardsList .awardRow,
+  .serviceList .serviceRow {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding: 0.75rem 0;
+
+    .date {
+      text-align: left;
+    }
+  }
+}

@@ -1,29 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.928f9d6c.css",
-    "main.js": "/static/js/main.95ce695f.js",
+    "main.css": "/static/css/main.978bbecb.css",
+    "main.js": "/static/js/main.e895bf19.js",
     "static/media/profile-photo-clear.png": "/static/media/profile-photo-clear.37885b9fa339a3ea33f8.png",
-    "static/media/ocean-painting.png": "/static/media/ocean-painting.6348a29aa3f8a9b4166f.png",
-    "static/media/castle-mosaic.png": "/static/media/castle-mosaic.a23f339a972e2f568741.png",
-    "static/media/reebok-line-drawing.png": "/static/media/reebok-line-drawing.7b3fd1147518394fdba1.png",
-    "static/media/crochet-tobi.png": "/static/media/crochet-tobi.ed0fd230582a47ef4cbd.png",
-    "static/media/blind-contour.png": "/static/media/blind-contour.7706de8084dc82fc8d2f.png",
-    "static/media/grayscale-car-dog.png": "/static/media/grayscale-car-dog.a9583f07ae545956b314.png",
-    "static/media/cross-hatch-car-dog.png": "/static/media/cross-hatch-car-dog.1c1d926479c6cb76cdfb.png",
-    "static/media/ceramic-cupcake.png": "/static/media/ceramic-cupcake.ab81bc40b824c19c5705.png",
-    "static/media/tongue.gif": "/static/media/tongue.bbd1ffebcfa8c53a3507.gif",
-    "static/media/puzzle-mug.png": "/static/media/puzzle-mug.6ce3c0670d9b33959f89.png",
-    "static/media/personal-website-image.png": "/static/media/personal-website-image.1e8fe0df7f8e39b7339c.png",
-    "static/media/profile-photo-details.png": "/static/media/profile-photo-details.fcf754b242d7e15b5fe4.png",
-    "static/media/chirp.png": "/static/media/chirp.d597a89168200e93ceec.png",
-    "static/media/counting-sheep.png": "/static/media/counting-sheep.e2d03c7d10dbfa4c1152.png",
-    "static/media/martial-arts-app-image.png": "/static/media/martial-arts-app-image.2973dffc4efa219128b2.png",
     "index.html": "/index.html",
-    "main.928f9d6c.css.map": "/static/css/main.928f9d6c.css.map",
-    "main.95ce695f.js.map": "/static/js/main.95ce695f.js.map"
+    "main.978bbecb.css.map": "/static/css/main.978bbecb.css.map",
+    "main.e895bf19.js.map": "/static/js/main.e895bf19.js.map"
   },
   "entrypoints": [
-    "static/css/main.928f9d6c.css",
-    "static/js/main.95ce695f.js"
+    "static/css/main.978bbecb.css",
+    "static/js/main.e895bf19.js"
   ]
 }
