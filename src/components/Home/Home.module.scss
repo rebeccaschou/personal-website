@@ -1,43 +1,272 @@
 @import "/src/global.scss";
 
-.about {
+.pageWrapper {
   background-color: $backgroundColor;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.about,
+.section {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  h2 {
+    color: $plainFontColor;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background-color: $mainColor;
+    border-radius: 2px;
+    margin: 1.25rem 0 2rem 0;
+  }
+}
+
+/* Specific About Section Layout */
+.about {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+  }
 
   .left {
-    flex: 0.5;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .emailCode {
+      font-family: "Fira Code", "Courier New", Courier, monospace;
+      font-size: 0.85rem;
+      color: $mainColor;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      width: fit-content;
+    }
+
+    .paragraphs {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      gap: 1.25rem;
+
+      p {
+        color: $paleFontColor;
+        font-size: 0.95rem;
+        line-height: 1.65;
+        margin: 0;
+
+        a {
+          color: $mainColor;
+          text-decoration: none;
+          text-underline-offset: 3px;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: $secondaryMainColor;
+          }
+        }
+      }
+    }
   }
 
   .right {
-    flex: 0.5;
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 1100px) {
-  .about {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+
+    .profileImage {
+      background: url("../../assets/profile/profile-photo-clear.png") no-repeat center / cover $paleFontColor;
+      box-shadow: inset 0 0 0 9px $mainColor;
+      border-radius: 50%;
+      width: 280px;
+      height: 280px;
+    }
+
+    .socialButtons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+
+      .iconButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: $plainFontColor;
+        transition: all 0.2s ease;
+
+        svg {
+          transition: transform 0.2s ease;
+        }
+
+        &:hover {
+          background-color: rgba($mainColor, 0.15);
+          border-color: $mainColor;
+          color: $mainColor;
+
+          svg {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
   }
 }
 
-@media (max-height: 700px) {
-  .about {
-    min-height: 500px;
+/* Projects Cards Grid */
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+
+  .projectRowLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .projectRow {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid $mainColor;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 6px 6px 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.04);
+      transform: translateX(4px);
+    }
+
+    .rowHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      h3 {
+        color: $plainFontColor;
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .typeTag {
+        color: $mainColor;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        background-color: rgba($mainColor, 0.1);
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+      }
+    }
+
+    .description {
+      color: $paleFontColor;
+      font-size: 0.925rem;
+      line-height: 1.6;
+      margin: 0 0 1rem 0;
+      max-width: 800px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      span {
+        color: $paleFontColor;
+        background-color: rgba(255, 255, 255, 0.05);
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
   }
 }
 
-@media (max-height: 700px) and (max-width: 1100px) {
+/* Responsive Media Queries */
+@media (max-width: 850px) {
   .about {
-    min-height: 580px;
-    // height: 600px;
+    padding: 2.5rem 1.5rem;
+
+    .container {
+      flex-direction: column-reverse; /* Places profile photo on top when stacked */
+      align-items: center;
+      gap: 2.5rem;
+    }
 
     .left {
-      flex: 0.9;
+      width: 100%;
+
+      .paragraphs {
+        text-align: left; /* Prevents awkward wide justification gaps on mobile */
+      }
     }
 
     .right {
-      flex: 0.1;
+      width: 100%;
+
+      .profileImage {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  }
+
+  .about,
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    .right {
+      .profileImage {
+        width: 180px;
+        height: 180px;
+        box-shadow: inset 0 0 0 6px $mainColor;
+      }
+    }
+  }
+
+  .projectRow {
+    .rowHeader {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
     }
   }
 }

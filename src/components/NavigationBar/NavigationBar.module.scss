@@ -9,16 +9,23 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  box-sizing: border-box;
 
   .wrapper {
-    padding: 20px 30px;
+    /* Match container width and padding of main sections */
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 
     .left {
       .logo {
-        font-size: 30px;
+        font-size: 1.5rem;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
@@ -29,16 +36,19 @@
       .navitems {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
 
         li {
           list-style: none;
-          padding: 0 15px;
+          padding-left: 1.5rem; /* Remove right-padding so the last link aligns strictly to the right boundary */
+          padding-right: 0;
           position: relative;
 
           a {
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 0.95rem;
             font-weight: 500;
             color: $plainFontColor;
             transition: 0.2s ease-in-out;
@@ -104,6 +114,14 @@
       background-color: $mainColor;
       transform-origin: left;
       transition: all 1s ease;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    .wrapper {
+      padding: 0 1.5rem; /* Matches the 1.5rem mobile section padding */
     }
   }
 }

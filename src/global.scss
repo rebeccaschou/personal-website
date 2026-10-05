@@ -1,5 +1,6 @@
-$mainColor: lightpink;
-$secondaryMainColor: rgb(255, 217, 223);
+$mainColor: rgb(175, 29, 58);
+$secondaryMainColor: rgb(122, 0, 24);
+$tertiaryMainColor: rgb(175, 49, 74);
 
 $backgroundColor: rgb(37, 35, 35);
 $secondaryBackgroundColor: rgb(245, 245, 245);
@@ -9,3 +10,12 @@ $plainFontColor: rgb(255, 255, 255);
 $softFontColor: rgb(80, 80, 80);
 $paleFontColor: rgb(180, 180, 180);
 
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+#about,
+#projects {
+  scroll-margin-top: 80px;
+}
