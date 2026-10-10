@@ -1,0 +1,101 @@
+@import "/src/global.scss";
+
+.pageWrapper {
+  background-color: $backgroundColor;
+  padding-top: 80px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  h2 {
+    color: $plainFontColor;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background-color: $mainColor;
+    border-radius: 2px;
+    margin: 1.25rem 0 2rem 0;
+  }
+}
+
+.writingList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .writingRowLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .writingRow {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid $mainColor;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 6px 6px 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.04);
+      transform: translateX(4px);
+    }
+
+    .rowHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      h3 {
+        color: $plainFontColor;
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .category {
+        color: $mainColor;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        background-color: rgba($mainColor, 0.1);
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+      }
+    }
+
+    .excerpt {
+      color: $paleFontColor;
+      font-size: 0.925rem;
+      line-height: 1.6;
+      margin: 0 0 0.75rem 0;
+    }
+
+    .date {
+      color: $paleFontColor;
+      font-size: 0.8rem;
+    }
+  }
+}

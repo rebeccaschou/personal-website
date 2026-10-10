@@ -8,6 +8,8 @@ import Menu from "./components/NavigationBar/Menu/Menu";
 import Home from "./components/Home/Home";
 import CV from "./components/CV/CV";
 import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
+import Writing from "./components/Writing/Writing";
+import Piece from "./components/Piece/Piece";
 
 // Scroll to top component that listens to route changes
 function ScrollToTop() {
@@ -51,6 +53,8 @@ function App() {
             <Route path="/cv" element={<CV />}></Route>
             <Route path="/project/:id" element={<ProjectDetail />} />
             <Route path="/research/:id" element={<ProjectDetail />} />
+            <Route path="/writing" element={<Writing />}></Route>
+            <Route path="/writing/:id" element={<Piece />}></Route>
           </Routes>
         </div>
       </div>

@@ -43,8 +43,11 @@ export default function Home() {
                 . My research interests have since converged on operating systems and systems security, particularly the ways that low-level systems establish, preserve, and recover security guarantees.
               </p>
               <p>
-                I’m currently an Associate Software Engineer at Fidelity Investments, where I work on enterprise trading systems. Outside of computing, I’m usually practicing Taekwondo, writing, or crocheting tiny birds—and occasionally turning a perfectly normal problem into an excuse to build an app.
-              </p>
+                I’m currently an Associate Software Engineer at Fidelity Investments, where I work on enterprise trading systems. 
+                Outside of computing, I’m usually practicing Taekwondo,{" "}
+                <Link to="/writing">writing</Link>, or crocheting tiny birds—and
+                occasionally turning a perfectly normal problem into an excuse to build an app.
+                </p>
             </div>
           </div>
 

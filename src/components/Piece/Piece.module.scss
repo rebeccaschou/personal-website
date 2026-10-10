@@ -1,0 +1,121 @@
+@import "/src/global.scss";
+
+.pageWrapper {
+  padding-top: 80px;
+  background-color: $backgroundColor;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem 5rem 2rem;
+  box-sizing: border-box;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+.backBtn {
+  color: $paleFontColor;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+.header {
+  .metaRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+
+    .category {
+      color: $mainColor;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      background-color: rgba($mainColor, 0.1);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .date {
+      color: $paleFontColor;
+      font-size: 0.85rem;
+    }
+  }
+
+  h1 {
+    color: $plainFontColor;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background-color: $mainColor;
+    border-radius: 2px;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  .heading {
+    color: $plainFontColor;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.25rem 0 0.25rem 0;
+  }
+
+  .paragraph {
+    color: $paleFontColor;
+    font-size: 1.025rem;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .verseBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Gap between stanzas */
+    margin: 0.5rem 0;
+
+    .stanza {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem; /* Spacing between lines in the same stanza */
+    }
+
+    .verseLine {
+      color: $plainFontColor;
+      font-size: 1.025rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.italicText {
+  font-style: italic;
+}
