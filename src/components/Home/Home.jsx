@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
 import { projectsData } from "../../data/projects";
 import { researchData } from "../../data/research";
 import Footer from "../Footer/Footer";
+import ImageModal from "../ImageModal/ImageModal";
+import tkd1 from "../../assets/taekwondo/tkd1.jpg";
+import tkd2 from "../../assets/taekwondo/tkd2.jpg";
+import tkd3 from "../../assets/taekwondo/tkd3.jpg";
+import tkd4 from "../../assets/taekwondo/tkd4.jpg";
+import tkd5 from "../../assets/taekwondo/tkd5.jpg";
+import tkd6 from "../../assets/taekwondo/tkd6.jpg";
+import tkd7 from "../../assets/taekwondo/tkd7.jpg";
+
+const tkdImages = [
+  { src: tkd1, caption: "Kick-a-Thon Fundraiser 2026" },
+  { src: tkd2, caption: "Brown Tournament 2025 - Sparring Team" },
+  { src: tkd3, caption: "Collegiate Nationals 2026 - Sparring" },
+  { src: tkd4, caption: "Collegiate Nationals 2026 - Poomsae" },
+  { src: tkd5, caption: "Brown Tournament 2025 - Poomsae Team" },
+  { src: tkd6, caption: "Black Belt Test 2026" },
+  { src: tkd7, caption: "Collegiate Nationals 2026 - Poomsae" },
+];
 
 export default function Home() {
+  const [tkdModalOpen, setTkdModalOpen] = useState(false);
+
   return (
     <main className={styles.pageWrapper}>
       {/* About Section */}
@@ -44,10 +64,16 @@ export default function Home() {
               </p>
               <p>
                 I’m currently an Associate Software Engineer at Fidelity Investments, where I work on enterprise trading systems. 
-                Outside of computing, I’m usually practicing Taekwondo,{" "}
-                <Link to="/writing">writing</Link>, or crocheting tiny birds—and
+                Outside of computing, I’m usually practicing{" "}
+                <button
+                  className={styles.inlineModalBtn}
+                  onClick={() => setTkdModalOpen(true)}
+                >
+                  Taekwondo
+                </button>
+                , <Link to="/writing">writing</Link>, or crocheting tiny birds—and
                 occasionally turning a perfectly normal problem into an excuse to build an app.
-                </p>
+              </p>
             </div>
           </div>
 
@@ -166,6 +192,12 @@ export default function Home() {
         </div>
       </section>
       <Footer />
+
+      <ImageModal
+        isOpen={tkdModalOpen}
+        onClose={() => setTkdModalOpen(false)}
+        images={tkdImages}
+      />
     </main>
   );
 }
