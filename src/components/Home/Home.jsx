@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
 import { projectsData } from "../../data/projects";
 import { researchData } from "../../data/research";
 import Footer from "../Footer/Footer";
 import ImageModal from "../ImageModal/ImageModal";
+
+// Photo imports 
+import profilePhoto from "../../assets/profile/profile-photo-clear.png";
 import tkd1 from "../../assets/taekwondo/tkd1.jpg";
 import tkd2 from "../../assets/taekwondo/tkd2.jpg";
 import tkd3 from "../../assets/taekwondo/tkd3.jpg";
@@ -25,6 +28,16 @@ const tkdImages = [
 
 export default function Home() {
   const [tkdModalOpen, setTkdModalOpen] = useState(false);
+
+  useEffect(() => {
+    const profileImg = new Image();
+    profileImg.src = profilePhoto;
+
+    tkdImages.forEach((image) => {
+      const img = new Image();
+      img.src = image.src;
+    });
+  }, []);
 
   return (
     <main className={styles.pageWrapper}>
